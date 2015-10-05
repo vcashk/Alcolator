@@ -20,6 +20,7 @@
     NSLog(@"Slider value changed to %f", sender.value);
     int glasses = (int)sender.value;
     NSString * titleValue = [NSString stringWithFormat:@"Whiskey (%d shots)", glasses];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
     self.navigationItem.title = titleValue;
     [self.beerPercentTextField resignFirstResponder];
 }
