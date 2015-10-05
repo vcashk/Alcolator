@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="418" y="531"/>
         </scene>
-        <!--Wine-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Wine" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="1267" y="377"/>
         </scene>
-        <!--Whiskey-->
+        <!--Whiskey View Controller-->
         <scene sceneID="hVP-J8-l2f">
             <objects>
-                <viewController title="Whiskey" id="RNy-Qc-Nv4" customClass="WhiskeyViewController" sceneMemberID="viewController">
+                <viewController id="RNy-Qc-Nv4" customClass="WhiskeyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="af8-SO-hhq"/>
                         <viewControllerLayoutGuide type="bottom" id="eGu-Y3-ur9"/>
