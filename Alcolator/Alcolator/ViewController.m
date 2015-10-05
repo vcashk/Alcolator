@@ -38,7 +38,9 @@
 - (IBAction)sliderValueDidChange:(UISlider *)sender {
     
     NSLog(@"Slider value changed to %f", sender.value);
-    [self.beerPercentTextField resignFirstResponder];
+    int glasses = (int)sender.value;
+    NSString * titleValue = [NSString stringWithFormat:@"Wine (%d shots)", glasses];
+    self.navigationItem.title = titleValue;    [self.beerPercentTextField resignFirstResponder];
 }
 
 - (IBAction)buttonPressed:(id)sender {
@@ -68,7 +70,7 @@
         wineText = NSLocalizedString(@"glasses", @"plural of glass");
     }
     // generate the result text, and display it on the label
-    NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of wine.", nil), numberOfBeers, beerText,  [self.beerPercentTextField.text floatValue], numberOfWineGlassesForEquivalentAlcoholAmount, wineText];
+    NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much \n%@ alcohol as %.1f %@ of wine.", nil), numberOfBeers, beerText,  [self.beerPercentTextField.text floatValue], numberOfWineGlassesForEquivalentAlcoholAmount, wineText];
     self.resultLabel.text = resultText;
 }
 
